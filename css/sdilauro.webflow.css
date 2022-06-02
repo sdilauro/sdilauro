@@ -345,7 +345,6 @@ figcaption {
   padding-right: 80px;
   padding-left: 80px;
   background-color: #f4f4f4;
-  min-height: 200px;
 }
 
 .section.short {
@@ -355,13 +354,13 @@ figcaption {
 
 .button {
   width: 40%;
+  margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
   padding: 12px 25px;
   border-radius: 0px;
   background-color: #333;
-  -webkit-transition: background-color 400ms ease, opacity 400ms ease,
-    color 400ms ease;
+  -webkit-transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
   transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
   color: #fff;
   font-size: 12px;
@@ -416,7 +415,7 @@ figcaption {
 
 .paragraph-bigger.cc-bigger-light {
   opacity: 0.6;
-  font-family: "Dosis variablefont wght";
+  font-family: 'Dosis variablefont wght';
 }
 
 .divider {
@@ -570,7 +569,7 @@ figcaption {
   width: auto;
   padding-top: 0px;
   background-color: transparent;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'PT Sans', sans-serif;
   line-height: 20px;
   text-decoration: none;
   text-transform: none;
@@ -649,8 +648,7 @@ figcaption {
   margin: 40px auto 80px;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
-  grid-template-areas:
-    ". . ."
+  grid-template-areas: ". . ."
     ". . .";
   -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -692,7 +690,7 @@ figcaption {
   -ms-flex-align: stretch;
   align-items: stretch;
   background-color: #f4f4f4;
-  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
+  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
   background-position: 50% 50%;
   background-size: cover;
   text-align: center;
@@ -709,22 +707,22 @@ figcaption {
 
 .work-image.cc-work-1 {
   height: 460px;
-  background-image: url("../images/portfolio-1---wide.svg");
+  background-image: url('../images/portfolio-1---wide.svg');
   background-size: cover;
 }
 
 .work-image.cc-work-2 {
-  background-image: url("../images/portfolio-2---wide.svg");
+  background-image: url('../images/portfolio-2---wide.svg');
   background-size: cover;
 }
 
 .work-image.cc-work-4 {
-  background-image: url("../images/portfolio-3---wide.svg");
+  background-image: url('../images/portfolio-3---wide.svg');
   background-size: cover;
 }
 
 .work-image.cc-work-3 {
-  background-image: url("../images/portfolio-4---wide.svg");
+  background-image: url('../images/portfolio-4---wide.svg');
   background-size: cover;
 }
 
@@ -988,8 +986,7 @@ figcaption {
   margin-bottom: 110px;
   grid-column-gap: 80px;
   grid-row-gap: 20px;
-  grid-template-areas:
-    ". ."
+  grid-template-areas: ". ."
     ". .";
   -ms-grid-rows: auto 20px auto;
   grid-template-rows: auto auto;
@@ -1022,8 +1019,7 @@ figcaption {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   -ms-grid-rows: auto 30px auto;
-  grid-template-areas:
-    ". . . ."
+  grid-template-areas: ". . . ."
     ". . . .";
   -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1034,8 +1030,7 @@ figcaption {
   margin-bottom: 135px;
   grid-column-gap: 50px;
   grid-row-gap: 100px;
-  grid-template-areas:
-    ". . . ."
+  grid-template-areas: ". . . ."
     ". . . .";
   -ms-grid-columns: 1fr 50px 1fr 50px 1fr 50px 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1311,7 +1306,7 @@ figcaption {
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto auto;
   grid-template-rows: auto auto;
-  background-image: url("../images/subtle-prism.svg");
+  background-image: url('../images/subtle-prism.svg');
   background-position: 0px 0px;
   background-size: cover;
 }
@@ -1340,6 +1335,8 @@ figcaption {
 
 .image-3 {
   padding: 10px;
+  -o-object-fit: scale-down;
+  object-fit: scale-down;
 }
 
 .div-block-4 {
@@ -1386,10 +1383,8 @@ figcaption {
 
   .navigation-item {
     padding: 15px 30px;
-    -webkit-transition: background-color 400ms ease, opacity 400ms ease,
-      color 400ms ease;
-    transition: background-color 400ms ease, opacity 400ms ease,
-      color 400ms ease;
+    -webkit-transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+    transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
     text-align: center;
   }
 
@@ -1431,8 +1426,7 @@ figcaption {
   }
 
   .work-experience-grid {
-    grid-template-areas:
-      ". ."
+    grid-template-areas: ". ."
       ". .";
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -1484,8 +1478,7 @@ figcaption {
     -ms-flex-direction: column;
     flex-direction: column;
     grid-row-gap: 50px;
-    grid-template-areas:
-      "."
+    grid-template-areas: "."
       ".";
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -1512,8 +1505,7 @@ figcaption {
   .services-items-grid {
     padding-top: 0px;
     grid-row-gap: 0px;
-    grid-template-areas:
-      "."
+    grid-template-areas: "."
       ".";
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -1526,8 +1518,7 @@ figcaption {
     margin-right: auto;
     margin-left: auto;
     grid-row-gap: 50px;
-    grid-template-areas:
-      "."
+    grid-template-areas: "."
       ".";
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -1540,8 +1531,7 @@ figcaption {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
-    grid-template-areas:
-      "."
+    grid-template-areas: "."
       "."
       "."
       ".";
@@ -1560,8 +1550,7 @@ figcaption {
   }
 
   .social-media-grid {
-    grid-template-areas:
-      ". ."
+    grid-template-areas: ". ."
       ". ."
       ". ."
       ". .";
@@ -1576,8 +1565,7 @@ figcaption {
     margin-right: auto;
     margin-left: auto;
     grid-row-gap: 50px;
-    grid-template-areas:
-      "."
+    grid-template-areas: "."
       "."
       ".";
     -ms-grid-columns: 1fr;
@@ -1592,8 +1580,7 @@ figcaption {
     margin-right: auto;
     margin-left: auto;
     grid-row-gap: 50px;
-    grid-template-areas:
-      "."
+    grid-template-areas: "."
       ".";
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -1644,6 +1631,10 @@ figcaption {
     margin-right: auto;
     margin-left: auto;
     box-shadow: 0 1px 8px -5px #000;
+  }
+
+  .image-3 {
+    padding: 20px;
   }
 }
 
@@ -1735,8 +1726,7 @@ figcaption {
 
   .contact-form-grid {
     grid-column-gap: 30px;
-    grid-template-areas:
-      "."
+    grid-template-areas: "."
       "."
       ".";
     -ms-grid-columns: 1fr;
@@ -2417,43 +2407,43 @@ figcaption {
 }
 
 @font-face {
-  font-family: "Dosis";
-  src: url("../fonts/Dosis-Bold.ttf") format("truetype");
+  font-family: 'Dosis';
+  src: url('../fonts/Dosis-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Dosis";
-  src: url("../fonts/Dosis-ExtraLight.ttf") format("truetype");
+  font-family: 'Dosis';
+  src: url('../fonts/Dosis-ExtraLight.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Dosis";
-  src: url("../fonts/Dosis-Light.ttf") format("truetype");
+  font-family: 'Dosis';
+  src: url('../fonts/Dosis-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Dosis";
-  src: url("../fonts/Dosis-Regular.ttf") format("truetype");
+  font-family: 'Dosis';
+  src: url('../fonts/Dosis-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Dosis";
-  src: url("../fonts/Dosis-SemiBold.ttf") format("truetype");
+  font-family: 'Dosis';
+  src: url('../fonts/Dosis-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Dosis";
-  src: url("../fonts/Dosis-Medium.ttf") format("truetype");
+  font-family: 'Dosis';
+  src: url('../fonts/Dosis-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
