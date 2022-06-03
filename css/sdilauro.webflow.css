@@ -586,7 +586,9 @@ figcaption {
 
 .name-text.button.div {
   display: inline-block;
+  margin-top: 0rem;
   padding-right: 0px;
+  padding-bottom: 0px;
   padding-left: 0px;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
@@ -612,7 +614,9 @@ figcaption {
 
 .name-text.button.picos {
   display: inline-block;
+  margin-top: 0rem;
   padding-right: 0px;
+  padding-bottom: 0px;
   padding-left: 0px;
   font-family: Inconsolata, monospace;
   font-weight: 700;
@@ -620,7 +624,9 @@ figcaption {
 
 .name-text.button.class {
   display: inline-block;
+  margin-top: 0rem;
   padding-right: 0px;
+  padding-bottom: 0px;
   padding-left: 5px;
   font-family: Inconsolata, monospace;
   color: #95e301;
@@ -629,7 +635,9 @@ figcaption {
 
 .name-text.button.values {
   display: inline-block;
+  margin-top: 0rem;
   padding-right: 0px;
+  padding-bottom: 0px;
   padding-left: 0px;
   font-family: Inconsolata, monospace;
   color: #e8de58;
@@ -1408,7 +1416,7 @@ figcaption {
 
 .div-block-5 {
   display: block;
-  margin-top: -8px;
+  margin-top: 0px;
   margin-right: 0px;
   margin-left: 0px;
   -webkit-box-orient: horizontal;
@@ -2152,9 +2160,14 @@ figcaption {
   }
 
   .div-block-5 {
-    margin-top: -21px;
-    -o-object-fit: contain;
-    object-fit: contain;
+    margin-top: 0px;
+    line-height: 16px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .div-block-5.indented {
+    margin-top: 0px;
   }
 }
 
