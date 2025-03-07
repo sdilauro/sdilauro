@@ -11824,3 +11824,91 @@ Webflow.require("ix2").init({
     ],
   },
 })
+
+const translations = {
+  es: {
+      home: "inicio",
+      portfolio: "portfolio",
+      skills: "Habilidades",
+      someSkills: "Estas son algunas de las herramientas con las que ya he trabajado; siempre estoy dispuesto a aprender nuevas y ampliar mi campo de acción.",
+      aboutMe: "Acerca de mí",
+      about: "Desarrollador front-end, ex estudiante de ingeniería. Trabajé en equipo durante más de diez años en la industria de Oil & Gas. Me desempeñé en distintos roles dentro del diseño de producto y como soporte de otros departamentos involucrados en la actividad. <br> Hace algunos años la programación dejó de ser un hobby para mí y pasó además a ser mi día a día, mi actividad principal. Hoy cuento con herramientas suficientes como para integrarme a cualquier equipo, trabajar de manera fluida, comunicar inquietudes, aportar ideas y soluciones.",
+      mail: "correo electrónico",
+      hi: "¡HOLA!",
+      sebastian: "Soy Sebastián",
+      developer: "desarrollador front-end",
+      start: "Comenzar",
+      cv: "Descargar CV",
+      cvDir: "documents/CV-SebastianDiLauro.pdf",
+      alttab: "Visual Basic - Minijuego para Windows",
+      aesir: "React, Typescript - Página web del juego homónimo",
+      viatrice: "HTML, CSS - Página web con reproductores e info del podcast",
+      kinema: "HTML, CSS - Página web de centro kinesiológico",
+      ask: "¿Te han interesado mis trabajos? ¡Ponte en contacto!",
+      callToAction: "Si crees que puedo brindarte una solución, no dudes en comunicarte conmigo.",
+      button: { text: "Español", flag: "images/flags/es.png" }
+    },
+  en: {
+    home: "home",
+    portfolio: "portfolio",
+    skills: "Skills",
+    someSkills: "These are some of the tools I have already worked with; I am always willing to learn new ones and expand my field of action.",
+    aboutMe: "About me",
+    about: "I'm front-end developer, former engineering student. I worked in a team for more than ten years in the Oil & Gas industry. I worked in different roles within product design and as support of other departments involved in the activity. <br/> A few years ago programming stopped being a hobby for me and became my day to day life, my main activity. Today I have enough tools to integrate myself to any team, work fluently, communicate concerns, contribute ideas and solutions.",
+    mail: "email",
+    hi: "Hi there!",
+    sebastian: "I'm Sebastián",
+    developer: "front-end developer",
+    start: "Start",
+    cv: "Download resume",
+    cvDir: "documents/CV-SebastianDiLauro-EN.pdf",
+    alttab: "Visual Basic - Windows Minigame",
+    aesir: "React, Typescript - Game website",
+    viatrice: "HTML, CSS - Podcast website with integrated player",
+    kinema: "HTML, CSS - Kinesiology center website",
+    ask: "Are you interested in my work? get in touch!",
+    callToAction: "If you think I can provide you with a solution, do not hesitate to contact me.",
+    button: { text: "English", flag: "images/flags/en.png" }
+  }
+};
+
+function changeLanguage(lang) {
+  document.querySelectorAll("[data-i18n]").forEach(element => {
+      const key = element.getAttribute("data-i18n");
+      element.innerHTML  = translations[lang][key];
+  });
+  document.querySelectorAll("[cvattribute]").forEach(element => {
+    const key = "cvDir"
+    element.href = translations[lang][key];
+  });
+  const nextLang = lang === "es" ? "en" : "es";
+    const button = document.getElementById("language-btn");
+    button.innerHTML = `
+        <img src="${translations[nextLang].button.flag}" alt="${translations[lang].button.text}" 
+            style="width: 20px; height: auto; vertical-align: middle; margin-right: 5px;">
+        
+    `;
+    
+    button.style.cssText = `
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: none;
+        background: none;
+        font-size: 16px;
+        cursor: pointer;
+    `;
+  localStorage.setItem("language", lang); // Guardar preferencia
+}
+
+function toggleLanguage() {
+  const currentLang = localStorage.getItem("language") || "es";
+  const newLang = currentLang === "es" ? "en" : "es";
+  changeLanguage(newLang);
+}
+
+// Cargar el idioma al iniciar la página
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("language") || "es";
+  changeLanguage(savedLang);
+});

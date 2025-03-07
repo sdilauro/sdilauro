@@ -63,10 +63,11 @@
       </a>
       <div class="navigation-wrap">
         <nav role="navigation" class="navigation-items w-nav-menu">
-          <a href="#home" class="navigation-item w-nav-link">inicio</a>
-          <a href="#portfolio" class="navigation-item w-nav-link">portfolio</a>
-          <a href="#skills" class="navigation-item w-nav-link">habilidades</a>
-          <a href="about.html" class="navigation-item w-nav-link">acerca de mí</a>
+          <a href="#home" class="navigation-item w-nav-link" data-i18n="home">inicio</a>
+          <a href="#portfolio" class="navigation-item w-nav-link"data-i18n="portfolio">portfolio</a>
+          <a href="#skills" class="navigation-item w-nav-link"data-i18n="skills">habilidades</a>
+          <a href="about.html" class="navigation-item w-nav-link"data-i18n="aboutMe">acerca de mí</a>
+          <button id="language-btn" onclick="toggleLanguage()" class="navigation-item w-nav-link"></button>
         </nav>
         <div class="menu-button w-nav-button">
           <img src="images/menu-icon_1menu-icon.png" width="22" alt="" class="menu-icon" />
@@ -81,7 +82,7 @@
         <h1 data-w-id="b1a5a2a3-17cd-b9b9-462d-cd43bf9a35aa" style="opacity: 0" class="heading-jumbo">
           Sebastián Di Lauro
         </h1>
-        <div data-w-id="b1a5a2a3-17cd-b9b9-462d-cd43bf9a35ac" style="opacity: 0" class="name-text">
+        <div data-w-id="b1a5a2a3-17cd-b9b9-462d-cd43bf9a35ac" style="opacity: 0" class="name-text" data-i18n="developer">
           desarrollador front-end
         </div>
       </div>
@@ -100,8 +101,10 @@
           <div class="name-text button class">href</div>
           <div class="name-text button picos">=</div>
           <div class="name-text button values">&quot;#portfolio&quot;</div>
-          <div class="name-text button picos">&gt;Comenzar&lt;/</div>
-          <div class="name-text button div">a</div>
+          <div class="name-text button picos" >&gt;</div>
+          <div class="name-text button picos" data-i18n="start">&gt;Comenzar /</div>
+          <div class="name-text button picos">&lt;/ </div>
+          <div class="name-text button div">a </div>
           <div class="name-text button picos">&gt;</div>
         </div>
         <div class="div-block-5">
@@ -131,7 +134,7 @@
         <div class="div-block-4"></div>
         <div class="work-description">
           <a href="https://sebadl.itch.io/alttab" target="_blank" class="project-name-link">ALT+Tab</a>
-          <div class="paragraph-light project-description">
+          <div class="paragraph-light project-description" data-i18n="alttab">
             Visual Basic - Minijuego para Windows
           </div>
         </div>
@@ -154,7 +157,7 @@
         <div class="div-block-4"></div>
         <div class="work-description">
           <a href="http://aesir-online.net" target="_blank" class="project-name-link">AESIR Online<br />Webpage</a>
-          <div class="paragraph-light project-description">
+          <div class="paragraph-light project-description" data-i18n="aesir">
             React, Typescript - Página web del juego homónimo
           </div>
         </div>
@@ -166,7 +169,7 @@
         <div class="work-description">
           <a href="https://viatrice.com.ar/" target="_blank" class="project-name-link">Viatrice Audiolibros<br />Landing
             page</a>
-          <div class="paragraph-light project-description">
+          <div class="paragraph-light project-description" data-i18n="viatrice">
             HTML, CSS - Página web con reproductores e info del podcast
           </div>
         </div>
@@ -178,7 +181,7 @@
         <div class="work-description">
           <a href="https://kinemakinesio.vercel.app/" target="_blank" class="project-name-link">Kinema<br />Landing
             page</a>
-          <div class="paragraph-light project-description">
+          <div class="paragraph-light project-description" data-i18n="kinema">
             HTML, CSS - Página web de centro kinesiológico
           </div>
         </div>
@@ -187,8 +190,8 @@
   </section>
   <section id="skills" class="section">
     <div class="carrer-headline-wrap">
-      <h2 class="section-title">Habilidades</h2>
-      <p class="paragraph-light">
+      <h2 class="section-title" data-i18n="skills">Habilidades</h2>
+      <p class="paragraph-light" data-i18n="someSkills">
         Estas son algunas de las herramientas con las que ya he trabajado; siempre estoy
         dispuesto a aprender nuevas y ampliar mi campo de acción.
       </p>
@@ -230,8 +233,8 @@
     <div class="container">
       <div class="contact">
         <div class="contact-headline">
-          <h3>¿Te han interesado mis trabajos? ¡Ponte en contacto!</h3>
-          <p class="paragraph-light">
+          <h3 data-i18n="ask">¿Te han interesado mis trabajos? ¡Ponte en contacto!</h3>
+          <p class="paragraph-light" data-i18n="callToAction">
             Si crees que puedo brindarte una solución, no dudes en comunicarte
             conmigo.
           </p>
@@ -242,7 +245,7 @@
   <div class="footer-wrap">
     <div class="footer-links">
       <a href="https://www.linkedin.com/in/sdilauro" target="_blank" class="footer-item">Linkedin</a>
-      <a href="mailto:jsdilauro@gmail.com?subject=Contacto" class="footer-item">correo electrónico</a>
+      <a href="mailto:jsdilauro@gmail.com?subject=Contacto" class="footer-item" data-i18n="mail">correo electrónico</a>
       <a href="https://github.com/sdilauro" target="_blank" class="footer-item">github</a>
     </div>
   </div>
