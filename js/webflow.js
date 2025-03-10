@@ -11854,7 +11854,7 @@ const translations = {
     skills: "Skills",
     someSkills: "These are some of the tools I have already worked with; I am always willing to learn new ones and expand my field of action.",
     aboutMe: "About me",
-    about: "I'm front-end developer, former engineering student. I worked in a team for more than ten years in the Oil & Gas industry. I worked in different roles within product design and as support of other departments involved in the activity. <br/> A few years ago programming stopped being a hobby for me and became my day to day life, my main activity. Today I have enough tools to integrate myself to any team, work fluently, communicate concerns, contribute ideas and solutions.",
+    about: "I'm a front-end developer, former engineering student. I worked in a team for more than ten years in the Oil & Gas industry. I worked in different roles within product design and as support of other departments involved in the activity. <br/> A few years ago, programming stopped being a hobby for me and became my main activity in my daily life. Today I have enough tools to integrate into any team, work fluently, communicate concerns, contribute ideas and solutions.",
     mail: "email",
     hi: "Hi there!",
     sebastian: "I'm Sebastián",
